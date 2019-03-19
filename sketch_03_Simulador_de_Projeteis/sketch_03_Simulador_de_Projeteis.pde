@@ -11,50 +11,45 @@ void setup() {
   size(600, 600);
   background(255);
   mostraMundo();
-  //  frameRate(1);
 }
 
 void draw() {
-//  background(255);
-  mostraMundo();
   dAtual_x = MRU(vAtual_x, tAtual);
   dAtual_y = MRUV(vAtual_y, aAtual, tAtual);
   console(tAtual, dAtual_x, dAtual_y, aAtual, vAtual_y);
   circulo(dAtual_x, dAtual_y);
+  mostraMundo();
   tAtual++;
 }
 
 float MRU(float v, float t) {
-  if (t%60==0) {
     float conv_t=t/60;
     float d=v*conv_t;
     return(d);
-  } else {
-    return 100000;
-  }
 }
 
 float MRUV(float v, float a, float t) {
-  if (t%60==0) {
     float conv_t=t/60;
     float d=v*conv_t+a*conv_t*conv_t/2.0;
     return(d);
-  } else {
-    return 100000;
-  }
 }
 
 void console(float t, float d_x, float d_y, float a, float v_y) {
-  if (t%60==0) {
-    println("Para X:", t/60.0, d_x);
-    println("Para Y:", t/60.0, d_y, v_y+a*(t/60.0));
-    String para_x = "Para X, o tempo é: " + t/60.0 +", e a posição em X é: " + d_x;
-    String para_y = "Para Y, o tempo é: " + t/60.0 +", a posição em Y é: " + d_y + ", e a velocidade em Y é: " + (v_y+a*(t/60.0));
+    String sconv_t = nf(t/60.0,2,2);
+    String sd_x= nf(d_x,2,2);
+    String sd_y= nf(d_y,2,2);
+    String velocidade=nf((v_y+a*(t/60.0)),2,2);
+    println("Para X:", sconv_t, sd_x);
+    println("Para Y:", sconv_t, sd_y, velocidade);
+    println();
+    String o_tempo = "O tempo é: " + sconv_t;
+    String para_x = "A posição em X é: " + sd_x;
+    String para_y = "A posição em Y é: " + sd_y + ", e a velocidade em Y é: " + velocidade;
     fill(0);
     background(255);
-    text(para_x, 0, 30);
-    text(para_y, 0, 45);
-  }
+    text(o_tempo, 5, 15);
+    text(para_x, 5, 30);
+    text(para_y, 5, 45);
 }
 
 void circulo(float dist_x, float dist_y) {

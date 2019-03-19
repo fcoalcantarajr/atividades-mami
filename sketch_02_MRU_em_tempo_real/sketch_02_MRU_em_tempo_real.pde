@@ -3,8 +3,8 @@ float vAtual = 10.0;
 float dAtual;
 
 void setup() {
-  size(600,600);
-//  frameRate(1);
+  size(600, 600);
+  background(255);
   mostraMundo();
 }
 
@@ -16,25 +16,17 @@ void draw() {
 }
 
 float MRU(float v, float t) { // impressão no canvas
-  float d=0, conv_t=0;
-  if(t%60==0) {
-    conv_t=t/60;
-    d=v*conv_t;
-  }
+  float conv_t=t/60;
+  float d=v*conv_t;
   return(d);
 }
 
 void console(float t, float d) { // impressão no console
-  if(t%60==0) {
-      println(t/60, d);
-  }
+    String sconv_t = nf(t/60.0,2,2);
+    String sd = nf(d,2,2);
+    println("Tempo:", sconv_t,"Distância:", sd);
+    println();
 }
-
-//float MRU(float v, float t) {
-//  float d;
-//  d=v*t;
-//  return(d);
-//}
 
 void circulo(float dist) {
   fill(0);
@@ -43,7 +35,7 @@ void circulo(float dist) {
 
 void mostraMundo() {
   for (float i=0; i<12; i++) {
-    line(i*50, 0, i*50,600);
+    line(i*50, 0, i*50, 600);
     line(0, i*50, 600, i*50);
   }
 }
