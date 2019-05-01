@@ -1,7 +1,7 @@
 boolean controle=true;
-  int menor_modulo=300;
-  int maior_modulo=400;
-  int modulo=menor_modulo;
+int menor_modulo=300;
+int maior_modulo=400;
+int modulo=menor_modulo;
 
 void setup() {
   size(400,400);
@@ -9,7 +9,8 @@ void setup() {
 
 void draw() {
   background(200);
-  if(modulo > maior_modulo) {
+  // controle
+  if(modulo > maior_modulo) { 
     controle=false;    
   }
   if(modulo < menor_modulo) {
@@ -20,10 +21,11 @@ void draw() {
   } else {
     modulo-=4;
   }
+  // chamada da função
   yinyang(mouseX, mouseY, modulo);
 }
 
-void yinyang(int x, int y, int modulo) {
+void yinyang(int x, int y, int modulo) { // desenho do símbolo
   fill(255);
   ellipse(x,y,modulo,modulo);
   fill(0);
