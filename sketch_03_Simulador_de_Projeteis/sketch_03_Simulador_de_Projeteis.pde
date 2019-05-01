@@ -22,19 +22,19 @@ void draw() {
   tAtual++;
 }
 
-float MRU(float v, float t) {
+float MRU(float v, float t) { // função para cálculo da distância em X
   float conv_t=t/60;
   float d=v*conv_t;
   return(d);
 }
 
-float MRUV(float v, float a, float t) {
+float MRUV(float v, float a, float t) { // função para cálculo da distância em Y
   float conv_t=t/60;
   float d=v*conv_t+a*conv_t*conv_t/2.0;
   return(d);
 }
 
-void console(float t, float d_x, float d_y, float a, float v_y) {
+void console(float t, float d_x, float d_y, float a, float v_y) { // exibe no console o tempo, a posição em X, a posição e a velocidade em Y. 
   String sconv_t = nf(t/60.0, 2, 2);
   String sd_x= nf(d_x, 2, 2);
   String sd_y= nf(d_y, 2, 2);
@@ -44,7 +44,7 @@ void console(float t, float d_x, float d_y, float a, float v_y) {
   println();
 }
 
-void texto_em_tela(float t, float d_x, float d_y, float a, float v_y) {
+void texto_em_tela(float t, float d_x, float d_y, float a, float v_y) { // concatena as strings e desenha o texto em tela
   String sconv_t = nf(t/60.0, 2, 2);
   String sd_x= nf(d_x, 2, 2);
   String sd_y= nf(d_y, 2, 2);
@@ -52,15 +52,15 @@ void texto_em_tela(float t, float d_x, float d_y, float a, float v_y) {
   String o_tempo = "O tempo é: " + sconv_t;
   String para_x = "A posição em X é: " + sd_x;
   String para_y = "A posição em Y é: " + sd_y + ", e a velocidade em Y é: " + velocidade;
-  fill(0);
+  fill(0); 
   rect(0,0,600,50);
-  fill(255);
+  fill(255); // permite apagar o texto anterior
   text(o_tempo, 5, 15);
   text(para_x, 5, 30);
   text(para_y, 5, 45);
 }
 
-void circulo(float dist_x, float dist_y) {
+void circulo(float dist_x, float dist_y) { // desenho do círculo nas posições X e Y no canvas.
   fill(0);
   ellipse(dist_x+10, 600-(dist_y+10), 10, 10);
 }
