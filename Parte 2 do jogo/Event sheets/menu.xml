@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>menu</name>
+    <events>
+        <event-block sid="254742923776998">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="875857233006041" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">JOGOA</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="185766262658283" type="System" />
+                <action id="-2" name="Go to layout" sid="974165784139096" type="System">
+                    <param id="0" name="Layout">tela_gameA</param>
+                </action>
+                <action id="-45" name="Reset persisted objects" sid="265306175693397" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="719386397669235">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="110127657565485" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">JOGOB</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="434222579867992" type="System" />
+                <action id="-2" name="Go to layout" sid="722949437476688" type="System">
+                    <param id="0" name="Layout">tela_gameB</param>
+                </action>
+                <action id="-45" name="Reset persisted objects" sid="668574775172703" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

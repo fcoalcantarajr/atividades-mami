@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="1">tela_derrotaA</layout>
+        <layout order="3">tela_derrotaB</layout>
+        <layout order="5">tela_gameA</layout>
+        <layout order="8">tela_gameB</layout>
+        <layout order="9">tela_menu</layout>
+        <event-sheet order="2">derrotaA</event-sheet>
+        <event-sheet order="6">gameA</event-sheet>
+        <event-sheet active="1" order="4">derrotaB</event-sheet>
+        <event-sheet order="7">vitoriaB</event-sheet>
+        <event-sheet order="0">gameB</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/solo/" />
+        <folder expanded="1" path="animation-folder/ovo/" />
+        <folder expanded="1" path="animation-folder/derrota/" />
+        <folder expanded="1" path="animation-folder/contadorDerrota/" />
+        <folder expanded="1" path="animation-folder/spawn1/" />
+        <folder expanded="1" path="animation-folder/cesta/" />
+        <folder expanded="1" path="animation-folder/fundojogo/" />
+        <folder expanded="1" path="animation-folder/fundo_telas/" />
+        <folder expanded="1" path="animation-folder/tentar_novamente/" />
+        <folder expanded="1" path="animation-folder/btnmenu/" />
+        <folder expanded="1" path="animation-folder/JOGOA/" />
+        <folder expanded="1" path="animation-folder/JOGOB/" />
+        <folder expanded="1" path="animation-folder/JOGAR_NOV/" />
+        <folder expanded="1" path="animation-folder/mickeyvitoria/" />
+        <folder expanded="1" path="animation-folder/mickeymago/" />
+        <folder expanded="1" path="animation-folder/galinha/" />
+    </folders-expanded>
+</c2uistate>

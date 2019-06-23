@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>gameA</name>
+    <events>
+        <variable constant="0" name="Derrota" sid="763480258025564" static="0" type="number">0</variable>
+        <variable constant="0" name="Pontos" sid="667774005229538" static="0" type="number">0</variable>
+        <event-block sid="593982529992028">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="565573176662898" type="ovo" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="805384117966569" type="ovo" />
+            </actions>
+        </event-block>
+        <event-block sid="774756639261730">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="194310881399151" type="System">
+                    <param id="0" name="Variable">Pontos</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="428809013506779" type="System">
+                    <param id="0" name="Layout">tela_vitoriaA</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="764981746428004">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="549320381494383" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="316234468349433" type="contadorDerrota">
+                    <param id="0" name="Frame number">Derrota</param>
+                </action>
+                <action id="0" name="Set text" sid="783289968116247" type="pontuacao">
+                    <param id="0" name="Text">Pontos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="486166015429771">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="407161449982310" type="System">
+                    <param id="0" name="Variable">Derrota</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="646886120280728" type="System">
+                    <param id="0" name="Layout">tela_derrotaA</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="399536912066757">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="493807440255289" type="ovo">
+                    <param id="0" name="Object">derrota</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="932766365452270" type="System">
+                    <param id="0" name="Variable">Derrota</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="165993078905814" type="ovo" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="429967851018722" title="Spawn">
+            <sub-events>
+                <variable constant="0" name="Timer" sid="277547420398195" static="0" type="number">0</variable>
+                <event-block sid="838346228787172">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="696164002040301" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="259986051689057" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="270118354383803">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="496289795888745" type="System">
+                                    <param id="0" name="Interval (seconds)">5</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="951175187572112">
+                                    <conditions>
+                                        <condition id="-16" name="Pick random instance" sid="311288162112144" type="System">
+                                            <param id="0" name="Object">spawn1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="940865586398786" type="System">
+                                            <param id="0" name="Object to create">ovo</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">spawn1.X</param>
+                                            <param id="3" name="Y">spawn1.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="156380241762081">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="346908483030384" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="302462828595475" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">15</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="152774464877929">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="550285721219368" type="System">
+                                    <param id="0" name="Interval (seconds)">2.5</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="429386670940872">
+                                    <conditions>
+                                        <condition id="-16" name="Pick random instance" sid="850810067332539" type="System">
+                                            <param id="0" name="Object">spawn1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="648516258715989" type="System">
+                                            <param id="0" name="Object to create">ovo</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">spawn1.X</param>
+                                            <param id="3" name="Y">spawn1.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="887400645015462">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="201467875367944" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">15</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="784422356002956" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">30</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="173964445064055">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="854429487366615" type="System">
+                                    <param id="0" name="Interval (seconds)">1.5</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="659403992966393">
+                                    <conditions>
+                                        <condition id="-16" name="Pick random instance" sid="783282748507301" type="System">
+                                            <param id="0" name="Object">spawn1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="907056519030114" type="System">
+                                            <param id="0" name="Object to create">ovo</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">spawn1.X</param>
+                                            <param id="3" name="Y">spawn1.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="673567438611191">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="228434222745189" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">30</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="189166447337605" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">50</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="190330141886649">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="115672301860668" type="System">
+                                    <param id="0" name="Interval (seconds)">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="740685179910851">
+                                    <conditions>
+                                        <condition id="-16" name="Pick random instance" sid="505978909741069" type="System">
+                                            <param id="0" name="Object">spawn1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="166081357380844" type="System">
+                                            <param id="0" name="Object to create">ovo</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">spawn1.X</param>
+                                            <param id="3" name="Y">spawn1.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="564422213241513" title="Mov">
+            <sub-events>
+                <event-block sid="195862840870892">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="373638106043369" type="Keyboard">
+                            <param id="0" name="Key">81 (Q)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="387616146018355" type="cesta">
+                            <param id="0" name="X">cesta.posxL</param>
+                            <param id="1" name="Y">cesta.posyU</param>
+                        </action>
+                        <action id="3" name="Start" sid="581673016176459" type="mickeymago">
+                            <param id="0" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="315923601655920">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="993089471881358" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="217463285287545" type="cesta">
+                            <param id="0" name="X">cesta.posxR</param>
+                            <param id="1" name="Y">cesta.posyU</param>
+                        </action>
+                        <action id="3" name="Start" sid="331932542965835" type="mickeymago">
+                            <param id="0" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="558204050659562">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="559424178977959" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="672655869101482" type="cesta">
+                            <param id="0" name="X">cesta.posxL</param>
+                            <param id="1" name="Y">cesta.posyD</param>
+                        </action>
+                        <action id="3" name="Start" sid="207558932807863" type="mickeymago">
+                            <param id="0" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="386636814186744">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="648616221860639" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="375995948127109" type="cesta">
+                            <param id="0" name="X">cesta.posxR</param>
+                            <param id="1" name="Y">cesta.posyD</param>
+                        </action>
+                        <action id="3" name="Start" sid="599228586748355" type="mickeymago">
+                            <param id="0" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="928945509295177" title="Pontuar">
+            <sub-events>
+                <event-block sid="775436547794009">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="160425806353786" type="ovo">
+                            <param id="0" name="Object">cesta</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="375103019168098" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="197200184706352" type="ovo" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

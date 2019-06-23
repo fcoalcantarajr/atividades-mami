@@ -1,4 +1,4 @@
-// Todos os estados de Mickey
+// Todos os estados de Minnie
 final int PRESENTE = 1;
 final int FORA = 2;
 // Carregamento Minnie

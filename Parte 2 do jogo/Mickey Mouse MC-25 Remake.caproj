@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Mickey Mouse MC-25 Remake</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1g74osofnuijn</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="solo" sid="691955740490965">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="503332089295801">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="140564380933498">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="898103929606779" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\madeira.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ovo" sid="413286217097315">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="999087588675647">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="581307285321777">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="259401068332464" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\ovo\egg\egg0.png">
+                        <collision-poly>
+                            <point x="0.28" y="0.232" />
+                            <point x="0.484" y="0.128" />
+                            <point x="0.7" y="0.232" />
+                            <point x="0.804" y="0.54" />
+                            <point x="0.724" y="0.812" />
+                            <point x="0.5" y="0.924" />
+                            <point x="0.256" y="0.812" />
+                            <point x="0.168" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="derrota" sid="922025038269343">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="398111820179599" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="contadorDerrota" sid="242238372871342">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="449241696660281" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\ovo\ovo-quebrado.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506494" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\ovo\egg-broken\egg-broken1.png">
+                        <collision-poly>
+                            <point x="0.171053" y="0.168831" />
+                            <point x="0.5" y="0" />
+                            <point x="0.828947" y="0.168831" />
+                            <point x="0.973684" y="0.493506" />
+                            <point x="0.881579" y="0.883117" />
+                            <point x="0.5" y="1" />
+                            <point x="0.118421" y="0.883117" />
+                            <point x="0.0263158" y="0.493506" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\ovo\egg-broken\egg-broken2.png">
+                        <collision-poly>
+                            <point x="0.0792683" y="0.166667" />
+                            <point x="0.920732" y="0.166667" />
+                            <point x="0.987805" y="0.5" />
+                            <point x="0.945122" y="0.884615" />
+                            <point x="0.054878" y="0.884615" />
+                            <point x="0.0121951" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\ovo\egg-broken\egg-broken3.png">
+                        <collision-poly>
+                            <point x="0.0515873" y="0.166667" />
+                            <point x="0.5" y="0.025641" />
+                            <point x="0.948413" y="0.166667" />
+                            <point x="0.992063" y="0.5" />
+                            <point x="0.964286" y="0.884615" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0357143" y="0.884615" />
+                            <point x="0.00793651" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spawn1" sid="902746580010880">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="idx" sid="426433795388966" type="number" />
+                <instance-variable name="idy" sid="907116714163076" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="697034312447264" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="210780977313221">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="cesta" sid="128282079291810">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="posxL" sid="523408266692776" type="number" />
+                <instance-variable name="posxR" sid="336314906931799" type="number" />
+                <instance-variable name="posyU" sid="629841924251734" type="number" />
+                <instance-variable name="posyD" sid="846914630737753" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="255530193573471" speed="5">
+                    <frame duration="1" hotspotX="0.501027" hotspotY="0.518248" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\cesta.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.222222" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.481481" />
+                            <point x="0.96875" y="0.962963" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.962963" />
+                            <point x="0" y="0.481481" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pontuacao" sid="813734178526958">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Vitoria" sid="987497673940149">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="derrota2" sid="940339814476708">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="fundojogo" sid="119742711394561">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="596842463961610" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5008" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\fundo.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="perdeu" sid="110570192277420">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="fundo_telas" sid="368438135913708">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="423081300016956" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\fundo_telas.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tentar_novamente" sid="705403904287878">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="986942882566847" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\botoes\tentar_nov.png">
+                        <collision-poly>
+                            <point x="0.0507246" y="0.0952381" />
+                            <point x="0.5" y="0.0782313" />
+                            <point x="0.949275" y="0.0952381" />
+                            <point x="0.947464" y="0.901361" />
+                            <point x="0.5" y="0.918367" />
+                            <point x="0.0507246" y="0.904762" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="680272033303616">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="btnmenu" sid="729387843877041">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="833644409460747" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\botoes\menu.png">
+                        <collision-poly>
+                            <point x="0.0507246" y="0.0952381" />
+                            <point x="0.5" y="0.0782313" />
+                            <point x="0.949275" y="0.0952381" />
+                            <point x="0.947464" y="0.901361" />
+                            <point x="0.5" y="0.918367" />
+                            <point x="0.0507246" y="0.904762" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="JOGOA" sid="741512213753291">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="153122749185312" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\botoes\JOGO A.png">
+                        <collision-poly>
+                            <point x="0.0507246" y="0.0952381" />
+                            <point x="0.5" y="0.0782313" />
+                            <point x="0.949275" y="0.0952381" />
+                            <point x="0.947464" y="0.901361" />
+                            <point x="0.5" y="0.918367" />
+                            <point x="0.0507246" y="0.904762" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="JOGOB" sid="393379341982616">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="507655522371843" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\botoes\JOGO B.png">
+                        <collision-poly>
+                            <point x="0.0507246" y="0.0952381" />
+                            <point x="0.5" y="0.0782313" />
+                            <point x="0.949275" y="0.0952381" />
+                            <point x="0.947464" y="0.901361" />
+                            <point x="0.5" y="0.918367" />
+                            <point x="0.0507246" y="0.904762" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="vamos_jogar" sid="427181738529757">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="JOGAR_NOV" sid="482536953852413">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="331168822285197" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\botoes\JOGAR_NOV.png">
+                        <collision-poly>
+                            <point x="0.0507246" y="0.0952381" />
+                            <point x="0.5" y="0.0782313" />
+                            <point x="0.949275" y="0.0952381" />
+                            <point x="0.947464" y="0.901361" />
+                            <point x="0.5" y="0.918367" />
+                            <point x="0.0507246" y="0.904762" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="titulo" sid="752366565122100">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="mickeyvitoria" sid="128007211937891">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="600554218177808" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504202" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\mickey\mickey_.png">
+                        <collision-poly>
+                            <point x="0.266667" y="0.134454" />
+                            <point x="0.5" y="0" />
+                            <point x="0.583333" y="0.210084" />
+                            <point x="0.55" y="0.495798" />
+                            <point x="0.716667" y="0.857143" />
+                            <point x="0.5" y="0.991597" />
+                            <point x="0.15" y="0.92437" />
+                            <point x="0.2" y="0.495798" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.5" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\mickey\mickey0.png">
+                        <collision-poly>
+                            <point x="0.238806" y="0.129032" />
+                            <point x="0.492537" y="0.104839" />
+                            <point x="0.552239" y="0.241935" />
+                            <point x="0.492537" y="0.5" />
+                            <point x="0.80597" y="0.895161" />
+                            <point x="0.104478" y="0.943548" />
+                            <point x="0.19403" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.504" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\mickey\mickey1.png">
+                        <collision-poly>
+                            <point x="0.345455" y="0.152" />
+                            <point x="0.490909" y="0" />
+                            <point x="0.672727" y="0.144" />
+                            <point x="0.8" y="0.496" />
+                            <point x="0.945455" y="0.976" />
+                            <point x="0.490909" y="0.992" />
+                            <point x="0.0727273" y="0.968" />
+                            <point x="0.2" y="0.496" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.5" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\mickey\mickey2.png">
+                        <collision-poly>
+                            <point x="0.338983" y="0.15873" />
+                            <point x="0.491525" y="0.047619" />
+                            <point x="0.677966" y="0.150794" />
+                            <point x="0.711864" y="0.5" />
+                            <point x="0.949153" y="0.97619" />
+                            <point x="0.491525" y="0.992063" />
+                            <point x="0.101695" y="0.952381" />
+                            <point x="0.322034" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.504" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\mickey\mickey3.png">
+                        <collision-poly>
+                            <point x="0.338983" y="0.16" />
+                            <point x="0.491525" y="0.04" />
+                            <point x="0.694915" y="0.144" />
+                            <point x="0.711864" y="0.496" />
+                            <point x="0.949153" y="0.976" />
+                            <point x="0.491525" y="0.992" />
+                            <point x="0.0508475" y="0.976" />
+                            <point x="0.169492" y="0.496" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.504" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Atividades\Parte 2 do jogo\Sprites\mickey\mickey3.png">
+                        <collision-poly>
+                            <point x="0.338983" y="0.16" />
+                            <point x="0.491525" y="0.04" />
+                            <point x="0.694915" y="0.144" />
+                            <point x="0.711864" y="0.496" />
+                            <point x="0.949153" y="0.976" />
+                            <point x="0.491525" y="0.992" />
+                            <point x="0.0508475" y="0.976" />
+                            <point x="0.169492" y="0.496" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mickeymago" sid="831145194843321">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="357255626294706" speed="5">
+                    <frame duration="1" hotspotX="0.516667" hotspotY="0.502591" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Trabalho\Parte 2\mickey_mago\mickey-mago1.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.0777202" />
+                            <point x="0.5" y="0.0518135" />
+                            <point x="0.883333" y="0.0362694" />
+                            <point x="0.75" y="0.497409" />
+                            <point x="0.916667" y="0.974093" />
+                            <point x="0.5" y="1" />
+                            <point x="0.116667" y="0.963731" />
+                            <point x="0.116667" y="0.497409" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.516667" hotspotY="0.502591" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Trabalho\Parte 2\mickey_mago\mickey-mago0.png">
+                        <collision-poly>
+                            <point x="0.363636" y="0.16129" />
+                            <point x="0.490909" y="0.0241935" />
+                            <point x="0.709091" y="0.129032" />
+                            <point x="0.836364" y="0.5" />
+                            <point x="0.963636" y="0.983871" />
+                            <point x="0.490909" y="1" />
+                            <point x="0.109091" y="0.951613" />
+                            <point x="0.4" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="galinha" sid="818664743154706">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="7" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="300082498244690" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504202" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Trabalho\Parte 2\galinha\galinha0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504202" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Trabalho\Parte 2\galinha\galinha6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504202" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Trabalho\Parte 2\galinha\galinha1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504202" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Trabalho\Parte 2\galinha\galinha2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504202" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Trabalho\Parte 2\galinha\galinha3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504587" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Trabalho\Parte 2\galinha\galinha4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504587" original-source="E:\Nuvens\Google Drive\Sistemas e Mídias Digitais\2019.1\MAMI\Trabalho\Parte 2\galinha\galinha5.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="111500008899536">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="points" sid="609755330608600">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="texto_pontos" sid="620948392867038">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>tela_menu.xml</layout>
+        <layout>tela_gameA.xml</layout>
+        <layout>tela_gameB.xml</layout>
+        <layout>tela_derrotaA.xml</layout>
+        <layout>tela_derrotaB.xml</layout>
+        <layout>tela_vitoriaA.xml</layout>
+        <layout>tela_vitoriaB.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>gameA.xml</event-sheet>
+        <event-sheet>derrotaA.xml</event-sheet>
+        <event-sheet>menu.xml</event-sheet>
+        <event-sheet>vitoriaA.xml</event-sheet>
+        <event-sheet>gameB.xml</event-sheet>
+        <event-sheet>derrotaB.xml</event-sheet>
+        <event-sheet>vitoriaB.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="20" />
+        <global-instance type="Mouse" uid="33" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

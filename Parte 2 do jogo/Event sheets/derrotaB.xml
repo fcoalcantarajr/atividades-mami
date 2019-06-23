@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>derrotaB</name>
+    <events>
+        <event-block sid="968024527901634">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="586524491407954" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">tentar_novamente</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="545366121221774" type="System" />
+                <action id="-2" name="Go to layout" sid="379279716932567" type="System">
+                    <param id="0" name="Layout">tela_gameB</param>
+                </action>
+                <action id="-45" name="Reset persisted objects" sid="681397394900655" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="547631275671957">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="522666031390435" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">btnmenu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="827109571558010" type="System" />
+                <action id="-2" name="Go to layout" sid="309639725792601" type="System">
+                    <param id="0" name="Layout">tela_menu</param>
+                </action>
+                <action id="-45" name="Reset persisted objects" sid="479040722491806" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="508760482479613">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="386280863356794" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="455422886243056" type="points">
+                    <param id="0" name="Text">Pontos</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
