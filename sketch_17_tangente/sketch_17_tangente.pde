@@ -18,7 +18,8 @@ void draw() {
   // ajuste de quadrantes - atan() pode mostrar resultados negativos
   if (ca < 0) {
     angulo = angulo + radians(180);
-  } else if (co < 0) {
+  } 
+  if (co < 0) {
     angulo = angulo + radians(360);
   }
   globo_ocular();
@@ -41,6 +42,7 @@ void pupila(float ang) {
     // se não, desenho a elipse dentro do globo, usando as coordenadas polares do ângulo recebido e o raio
     // aqui eu também subtraio 40, pelos mesmos motivos
     ellipse(coordPolarX((width / 4) - 40, ang) + (width / 2), coordPolarY((width / 4) - 40, ang) + (height / 2), 80, 80);
+    //ellipse((raioX, anguloX), (raioY, anguloY))
   }
 }
 
